@@ -197,7 +197,7 @@ MonoBehaviour:
   destroy: 1
   spawn:
   - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
-  timeThreshold: 60
+  timeThreshold: 30
   addNoise: 1
   range: 1
 --- !u!114 &8167597269980923120

@@ -21,13 +21,6 @@ public class DetectProximity : TimedRule
         StartPeriodicChecks();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        
-    }
-
     protected override bool CheckIfConditionPersists()
     {
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, range);

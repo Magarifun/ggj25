@@ -1,6 +1,6 @@
 using UnityEngine;
 
-abstract public class TimedRule : PeriodicCheckRule
+public class TimedRule : PeriodicCheckRule
 {
     [Header("Time threshold")]
     public float timeThreshold = 0.5f;
@@ -8,6 +8,11 @@ abstract public class TimedRule : PeriodicCheckRule
 
     private int checkCount;
     private int detectionStreak = 0;
+
+    private void Start()
+    {
+        StartPeriodicChecks();
+    }
 
     protected override void StartPeriodicChecks()
     {
@@ -38,5 +43,5 @@ abstract public class TimedRule : PeriodicCheckRule
         }
     }
 
-    protected abstract bool CheckIfConditionPersists();
+    protected virtual bool CheckIfConditionPersists() => true;
 }
