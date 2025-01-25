@@ -60,9 +60,10 @@ Material:
     - _CanUseShockwave: 1
     - _DistortionScale: 1.62
     - _DistortionSpeed: 1
+    - _InvertTexture: 0
     - _ShockwaveSize: 0.1
     - _Size: 0.8
-    - _SpriteFlashBlendAmount: 0
+    - _SpriteFlashBlendAmount: 0.1
     - _UseWind: 1
     - _WaveDistanceFromCenter: 0.17
     - _WaveStrenght: -0.16
@@ -71,6 +72,6 @@ Material:
     - _WindNoiseScale: 0.5
     m_Colors:
     - _SpawnPosition: {r: 0.24, g: 0.36, b: 0, a: 0}
-    - _SpriteFlashColor: {r: 2, g: 2, b: 2, a: 1}
+    - _SpriteFlashColor: {r: 2.9960785, g: 2.9960785, b: 2.9960785, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

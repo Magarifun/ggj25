@@ -55,11 +55,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _AutomaticDebug: 0
-    - _CanFlash: 1
+    - _CanFlash: 0
     - _CanHaveDistortion: 1
     - _CanUseShockwave: 1
     - _DistortionScale: 10
     - _DistortionSpeed: 0.11
+    - _InvertTexture: 0
     - _ShockwaveSize: 0.1
     - _Size: 0.39
     - _SpriteFlashBlendAmount: 0

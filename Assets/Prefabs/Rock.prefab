@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2938312917014273790}
   - component: {fileID: 8167597269980923120}
   - component: {fileID: -150580197889850197}
+  - component: {fileID: 3897977763558955820}
   m_Layer: 0
   m_Name: Rock
   m_TagString: Element
@@ -61,7 +62,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 4c636e50139ff944baa0384c553f9e8c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
   m_Color: {r: 0.37106913, g: 0.32802406, b: 0.27421772, a: 1}
   m_FlipX: 0
@@ -180,6 +181,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementTags:
   - rock
+  standingUp: 0
+  upgrades: []
 --- !u!114 &2938312917014273790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,9 +197,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetElementTags:
   - soil
+  ignoreElementTags: []
   destroy: 1
   spawn:
   - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
+  upgrade: 0
   timeThreshold: 30
   addNoise: 1
   range: 1
@@ -215,9 +220,11 @@ MonoBehaviour:
   targetElementTags:
   - rock
   - ore
+  ignoreElementTags: []
   destroy: 1
   spawn:
   - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
+  upgrade: 0
   timeThreshold: 3
   addNoise: 1
   targetLevel: 3
@@ -236,6 +243,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetElementTags:
   - water
+  ignoreElementTags: []
   destroy: 1
   spawn:
   - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
+  upgrade: 0
+  combineTwoElements: 0
+--- !u!114 &3897977763558955820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3716168090478742639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ComponentVersion: 2
+  m_LightType: 3
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.495
+  m_Color: {r: 1, g: 0.48742133, b: 0.48742133, a: 1}
+  m_Intensity: 0.4
+  m_LightVolumeIntensity: 1
+  m_LightVolumeEnabled: 0
+  m_ApplyToSortingLayers: c75c719f00000000cf2c9752bb541e6dcbd8bb78
+  m_LightCookieSprite: {fileID: 0}
+  m_DeprecatedPointLightCookieSprite: {fileID: 0}
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_OverlapOperation: 0
+  m_NormalMapDistance: 3
+  m_NormalMapQuality: 2
+  m_UseNormalMap: 0
+  m_ShadowsEnabled: 0
+  m_ShadowIntensity: 0.75
+  m_ShadowSoftness: 0.3
+  m_ShadowSoftnessFalloffIntensity: 0.5
+  m_ShadowVolumeIntensityEnabled: 0
+  m_ShadowVolumeIntensity: 0.75
+  m_LocalBounds:
+    m_Center: {x: 0, y: -0.00000011920929, z: 0}
+    m_Extent: {x: 0.9985302, y: 0.99853027, z: 0}
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 0.35
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.5
+  m_ShapeLightFalloffOffset: {x: 0, y: 0}
+  m_ShapePath:
+  - {x: -0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: -0.5, z: 0}
+  - {x: 0.5, y: 0.5, z: 0}
+  - {x: -0.5, y: 0.5, z: 0}
