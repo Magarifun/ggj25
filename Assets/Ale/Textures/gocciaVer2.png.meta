@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gocciaVer2_0: -8130072337777714138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
