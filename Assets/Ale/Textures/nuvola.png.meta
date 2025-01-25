@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f1d17285158f2744cad570734eb57fc2
+guid: 1f98256cc82feba48a4aaa83b3f493c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5356574185940491189
-    second: Wall_0
+      213: -73011207515100769
+    second: nuvola_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wall_0
+      name: nuvola_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1024
-        height: 1024
+        y: 1
+        width: 287
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b446df18820a9a5b0800000000000000
-      internalID: -5356574185940491189
+      spriteID: f99a07f81bc9cfef0800000000000000
+      internalID: -73011207515100769
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Wall_0: -5356574185940491189
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
