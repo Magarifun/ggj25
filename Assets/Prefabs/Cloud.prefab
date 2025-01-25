@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8627406822266067745}
   - component: {fileID: 6561866613938754245}
   - component: {fileID: 8657741468431879540}
+  - component: {fileID: 4501845780903099527}
   m_Layer: 0
   m_Name: Cloud
   m_TagString: Element
@@ -231,6 +232,30 @@ MonoBehaviour:
   timeThreshold: 10
   addNoise: 1
   targetLevel: 0
+  strict: 0
+--- !u!114 &4501845780903099527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620304729028796628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47708abb2c316b34685cb9da7a1ad644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetElementTags: []
+  ignoreElementTags: []
+  destroy: 1
+  spawn:
+  - {fileID: 254251000857279531, guid: 4963cd6c7ba46974cb8a73aafe9a4308, type: 3}
+  - {fileID: 254251000857279531, guid: 4963cd6c7ba46974cb8a73aafe9a4308, type: 3}
+  - {fileID: 254251000857279531, guid: 4963cd6c7ba46974cb8a73aafe9a4308, type: 3}
+  upgrade: 0
+  timeThreshold: 1
+  addNoise: 0
+  targetLevel: 2
   strict: 0
 --- !u!1001 &4688094331875564185
 PrefabInstance:

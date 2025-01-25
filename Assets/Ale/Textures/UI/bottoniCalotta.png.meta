@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bottoniCalotta_0: 3099890974987681009
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
