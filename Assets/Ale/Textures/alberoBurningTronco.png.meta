@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      alberoBurningTronco_0: 3094062411632543180
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

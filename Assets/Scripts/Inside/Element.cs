@@ -23,7 +23,10 @@ public class Element : MonoBehaviour
         {
             for (int i = 1; i < upgrades.Length; i++)
             {
-                upgrades[i].SetActive(false);
+                if (upgrades[i])
+                {
+                    upgrades[i].SetActive(false);
+                }
             }
             upgrades[upgradeIndex].SetActive(true);
         }
