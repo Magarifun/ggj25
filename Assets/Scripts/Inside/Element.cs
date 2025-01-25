@@ -30,7 +30,7 @@ public class Element : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (standingUp && TryGetComponent<Rigidbody2D>(out Rigidbody2D rb2d))
         {
