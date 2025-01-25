@@ -422,6 +422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1253283529}
   - component: {fileID: 1253283528}
+  - component: {fileID: 1253283530}
   m_Layer: 0
   m_Name: Cheats
   m_TagString: Untagged
@@ -500,6 +501,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1253283530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253283527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88267f2a91a61c48b5b069267481885, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1260324530
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,6 +954,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 192699851782397660, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 192699851782397660, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1253283530}
+    - target: {fileID: 192699851782397660, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadCurrentScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 192699851782397660, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SceneReloader, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 787336679355756909, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
       propertyPath: m_Camera
       value: 
