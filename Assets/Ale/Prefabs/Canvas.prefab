@@ -53,6 +53,8 @@ MonoBehaviour:
   - {fileID: 6360559175242607019, guid: bb3a55ab3007a874abf545000e56eb8b, type: 3}
   - {fileID: 3620304729028796628, guid: 4963cd6c7ba46974cb8a73aafe9a4308, type: 3}
   - {fileID: 3620304729028796628, guid: 20555786890f5954ca05008c1fc74879, type: 3}
+  - {fileID: 3013656485548069051, guid: 74ddfb7eb4afcdc42ae553e26babe7f6, type: 3}
+  - {fileID: 3620304729028796628, guid: 77a15138998bd6148b519ec420b2ca84, type: 3}
   burstCount: 1
   spawnAreaMin: {x: -1.58, y: -0.23}
   spawnAreaMax: {x: 1.69, y: 2.49}
@@ -793,7 +795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7294618523508573758, guid: 4b41076dbc7196b49b19d3bfe47edd12, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 0,3
+      value: 8,3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2153,7 +2155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7294618523508573758, guid: 4b41076dbc7196b49b19d3bfe47edd12, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 7,5
+      value: 9,10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2661,7 +2663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7294618523508573758, guid: 4b41076dbc7196b49b19d3bfe47edd12, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: 5,5
+      value: 9,5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
