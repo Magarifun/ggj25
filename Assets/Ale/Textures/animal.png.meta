@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: e99d5a9b5fcf1734ab21a739addb7719
+guid: 32b99a15af9133742a2a6926bc204d6d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3424623838207272123
-    second: alberoLvl3_Normal_0
+      213: -9032679894510146780
+    second: animal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
-    sRGBTexture: 0
+    enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -55,9 +55,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 1
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alberoLvl3_Normal_0
+      name: animal_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 122
-        height: 157
+        x: 8
+        y: 4
+        width: 95
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bb4eda58c35b68f20800000000000000
-      internalID: 3424623838207272123
+      spriteID: 42be8ed3e7975a280800000000000000
+      internalID: -9032679894510146780
       vertices: []
       indices: 
       edges: []

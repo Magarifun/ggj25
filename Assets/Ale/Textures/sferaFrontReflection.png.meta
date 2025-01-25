@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 46cf0d6105399504a85091366e759a0f
+guid: 90df422588196994695c831869079d56
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4368732438085667338
-    second: sunVer1_0
+      213: 4727251899950693570
+    second: sferaFrontReflection_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sunVer1_0
+      name: sferaFrontReflection_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 200
-        height: 200
+        x: 256
+        y: 775
+        width: 322
+        height: 299
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a0a82d2810bd0ac30800000000000000
-      internalID: 4368732438085667338
+      spriteID: 2ccf9549e829a9140800000000000000
+      internalID: 4727251899950693570
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      sunVer1_0: 4368732438085667338
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

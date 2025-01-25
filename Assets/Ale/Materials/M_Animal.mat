@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_DeadTree
+  m_Name: M_Animal
   m_Shader: {fileID: -6465566751694194690, guid: eb552acf5d7cf2f4fac5b48fe1d83b01, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,7 +37,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: 05f7bd52f50c66e47abc9e25e85c80f2, type: 3}
+        m_Texture: {fileID: 2800000, guid: 32b99a15af9133742a2a6926bc204d6d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -61,16 +61,16 @@ Material:
     - _DistortionScale: 1.62
     - _DistortionSpeed: 1
     - _ShockwaveSize: 0.1
-    - _Size: 0.15
+    - _Size: 0.8
     - _SpriteFlashBlendAmount: 0
     - _UseWind: 1
-    - _WaveDistanceFromCenter: 0.402
+    - _WaveDistanceFromCenter: 0.17
     - _WaveStrenght: -0.16
-    - _WindHeightMask: 0
+    - _WindHeightMask: 0.09
     - _WindIntensity: 0.1
-    - _WindNoiseScale: 0.37
+    - _WindNoiseScale: 0.5
     m_Colors:
-    - _SpawnPosition: {r: 0.5, g: 0.35, b: 0, a: 0}
+    - _SpawnPosition: {r: 0.24, g: 0.36, b: 0, a: 0}
     - _SpriteFlashColor: {r: 2, g: 2, b: 2, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

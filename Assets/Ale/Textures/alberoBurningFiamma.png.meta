@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8790525061eac5e41b75a92e0ae94948
+guid: f81d06b050a1edf41b61dc66fa87d187
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8453289216730526703
-    second: goccia_0
+      213: 1941526607535014259
+    second: alberoBurningFiamma_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: goccia_0
+      name: alberoBurningFiamma_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 161
-        height: 71
+        x: 9
+        y: 15
+        width: 102
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fe3fcd251cd105570800000000000000
-      internalID: 8453289216730526703
+      spriteID: 3710814b920b1fa10800000000000000
+      internalID: 1941526607535014259
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      goccia_0: 8453289216730526703
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

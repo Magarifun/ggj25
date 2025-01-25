@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: a2b2b6c94974385499c9ee3328036662
+guid: 1d5dd1bedcd40014eb51b987a2c9785d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7684998595639215802
-    second: alberoLvl3_v2_0
+      213: 6485968729258870308
+    second: sunRay1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
-    sRGBTexture: 0
+    enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -55,9 +55,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 1
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alberoLvl3_v2_0
+      name: sunRay1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 122
-        height: 157
+        x: 21
+        y: 21
+        width: 198
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6497c8f7e76695590800000000000000
-      internalID: -7684998595639215802
+      spriteID: 42644c3f13ac20a50800000000000000
+      internalID: 6485968729258870308
       vertices: []
       indices: 
       edges: []
