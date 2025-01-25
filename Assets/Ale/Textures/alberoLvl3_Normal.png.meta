@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 1fd5f863866bd734887fc9a9ea7b2e5f
+guid: e99d5a9b5fcf1734ab21a739addb7719
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6359852294693187556
-    second: alberoLvl3_0
+      213: 3424623838207272123
+    second: alberoLvl3_Normal_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
-    sRGBTexture: 1
+    enableMipMap: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -55,9 +55,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 1
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: alberoLvl3_0
+      name: alberoLvl3_Normal_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c101cdea8044db7a0800000000000000
-      internalID: -6359852294693187556
+      spriteID: bb4eda58c35b68f20800000000000000
+      internalID: 3424623838207272123
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      alberoLvl3_0: -6359852294693187556
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
