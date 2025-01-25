@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.401, g: 0.35268673, b: 0.2898795, a: 1}
+  m_Color: {r: 0.37106913, g: 0.32802406, b: 0.27421772, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -192,11 +192,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5ff4ce0b20e764499e4d1e86649313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replaceWith:
-  - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
-  spawn: []
   targetElementTags:
   - soil
+  destroy: 1
+  spawn:
+  - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
   timeThreshold: 60
   addNoise: 1
   range: 1
@@ -212,12 +212,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47708abb2c316b34685cb9da7a1ad644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replaceWith:
-  - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
-  spawn: []
   targetElementTags:
   - rock
   - ore
+  destroy: 1
+  spawn:
+  - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
   timeThreshold: 3
   addNoise: 1
   targetLevel: 3
@@ -234,8 +234,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667c087bcaefb6441abfb89266fb11a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  replaceWith:
-  - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
-  spawn: []
   targetElementTags:
   - water
+  destroy: 1
+  spawn:
+  - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}

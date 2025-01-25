@@ -4,19 +4,23 @@ using UnityEngine;
 [RequireComponent(typeof(Element))]
 public class Rule : MonoBehaviour
 {
-    public Element[] replaceWith;
-    public Element[] spawn;
     public string[] targetElementTags;
+    public bool destroy = false;
+    public Element[] spawn;
 
     public void ApplyConsequences()
     {
-        if (replaceWith.Length > 0)
+        if (destroy)
         {
             Destroy(this.gameObject);
-            foreach (Element replacement in replaceWith)
+        }
+        if (spawn.Length > 0)
+        {
+            foreach (Element replacement in spawn)
             {
                 var newElement = Instantiate(replacement, transform.position, Quaternion.identity, transform.parent);
                 newElement.name = $"{replacement.name} <- {this.gameObject.name}";
+                // TODO if (!destroy) push newly spawned object
             }
         }
     }
