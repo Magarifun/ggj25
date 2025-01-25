@@ -9,6 +9,11 @@ public class Element : MonoBehaviour
     public bool standingUp = false;
     public GameObject[] upgrades;
     private int upgradeIndex = 0;
+    private bool usedInRule = false;
+
+    public bool UsedInRule => usedInRule;
+
+    public string OwnElementTag => elementTags[0];
 
     internal void Remove()
     {
@@ -35,6 +40,7 @@ public class Element : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        usedInRule = false;
         if (standingUp && TryGetComponent<Rigidbody2D>(out Rigidbody2D rb2d))
         {
             float deviationDegrees = Vector3.SignedAngle(Vector3.up, transform.up, Vector3.forward);
@@ -42,7 +48,6 @@ public class Element : MonoBehaviour
             // Apply torch
             rb2d.AddTorque(torque);
         }
-
     }
 
     public void Upgrade()
@@ -61,5 +66,10 @@ public class Element : MonoBehaviour
                 Destroy(gameObject);
             }           
         }
+    }
+
+    public void MarkAsUsedInRule()
+    {
+        usedInRule = true;
     }
 }
