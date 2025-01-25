@@ -9,12 +9,17 @@ public class Rule : MonoBehaviour
     public string[] targetElementTags;
     public bool destroy = false;
     public Element[] spawn;
+    public bool upgrade = false;
 
     public void ApplyConsequences()
     {
         if (destroy)
         {
             Destroy(this.gameObject);
+        }
+        else if (upgrade)
+        {
+            GetComponent<Element>().Upgrade();
         }
         if (spawn.Length > 0)
         {
@@ -25,7 +30,7 @@ public class Rule : MonoBehaviour
 
                 // Throws away newly spawned object if it's not a replacement rule
                 if (!destroy)
-                {
+                {   
                     Vector2 randomOffset = (Random.insideUnitCircle * 0.1f);
                     if (randomOffset.y < 0)
                     {
@@ -36,6 +41,7 @@ public class Rule : MonoBehaviour
                     {
                         rb.AddForce(randomOffset * SPAWN_IMPULSE, mode: ForceMode2D.Impulse);
                     }
+                    
                 }
             }
         }

@@ -110,6 +110,7 @@ MonoBehaviour:
   - vegetal
   - life
   standingUp: 0
+  upgrades: []
 --- !u!70 &8534656565425624791
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -119,7 +120,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 6043964007613236551}
   m_Enabled: 1
   serializedVersion: 3
-  m_Density: 1
+  m_Density: 0.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -159,7 +160,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.0417097
+  m_Mass: 0.02085485
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -191,6 +192,7 @@ MonoBehaviour:
   destroy: 1
   spawn:
   - {fileID: 8681821756164338913, guid: bb3a55ab3007a874abf545000e56eb8b, type: 3}
+  upgrade: 0
   timeThreshold: 3
   addNoise: 0
   range: 1
@@ -209,6 +211,7 @@ MonoBehaviour:
   targetElementTags: []
   destroy: 1
   spawn: []
+  upgrade: 0
   timeThreshold: 6
   addNoise: 1
 --- !u!1001 &4375417218200939490
