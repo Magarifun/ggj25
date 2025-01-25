@@ -173,6 +173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementTags:
   - cloud
+  - gas
   standingUp: 1
   upgrades:
   - {fileID: 880317390494726244}
