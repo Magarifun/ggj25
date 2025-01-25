@@ -15,8 +15,9 @@ GameObject:
   - component: {fileID: 8691049861846971694}
   - component: {fileID: -8597496264503906845}
   - component: {fileID: 2357614338659520918}
-  - component: {fileID: 1974904279063006095}
   - component: {fileID: 5246284202591300627}
+  - component: {fileID: -6973561165716164209}
+  - component: {fileID: 6198723343496037704}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Element
@@ -181,6 +182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetElementTags: []
+  ignoreElementTags: []
   destroy: 0
   spawn:
   - {fileID: 7753086928995452827, guid: 30a4d04c88658e641b4e9aed6a8b00ab, type: 3}
@@ -229,6 +231,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetElementTags: []
+  ignoreElementTags:
+  - gas
+  - hot
   destroy: 1
   spawn:
   - {fileID: 8681821756164338913, guid: fd8c2d683762aa245b4a4026fa1d4cac, type: 3}
@@ -237,27 +242,6 @@ MonoBehaviour:
   addNoise: 1
   targetLevel: 2
   strict: 0
---- !u!114 &1974904279063006095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6360559175242607019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5ff4ce0b20e764499e4d1e86649313, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetElementTags:
-  - water
-  destroy: 1
-  spawn:
-  - {fileID: 8681821756164338913, guid: fd8c2d683762aa245b4a4026fa1d4cac, type: 3}
-  upgrade: 0
-  timeThreshold: 2
-  addNoise: 1
-  range: 0.5
 --- !u!114 &5246284202591300627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,12 +256,55 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetElementTags:
   - soil
+  ignoreElementTags: []
   destroy: 0
   spawn: []
   upgrade: 1
   timeThreshold: 10
   addNoise: 1
   range: 1
+--- !u!114 &-6973561165716164209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360559175242607019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667c087bcaefb6441abfb89266fb11a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetElementTags:
+  - hot
+  ignoreElementTags: []
+  destroy: 1
+  spawn:
+  - {fileID: 8681821756164338913, guid: a5b348d345087e54694c30668f01da13, type: 3}
+  upgrade: 0
+  combineTwoElements: 0
+--- !u!114 &6198723343496037704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360559175242607019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47708abb2c316b34685cb9da7a1ad644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetElementTags:
+  - water
+  ignoreElementTags: []
+  destroy: 1
+  spawn: []
+  upgrade: 0
+  timeThreshold: 10
+  addNoise: 1
+  targetLevel: 1
+  strict: 1
 --- !u!1001 &856521997347187551
 PrefabInstance:
   m_ObjectHideFlags: 0

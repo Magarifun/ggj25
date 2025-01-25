@@ -170,6 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementTags:
   - steam
+  - gas
   standingUp: 1
   upgrades: []
 --- !u!114 &6561866613938754245
