@@ -16,7 +16,7 @@ public class AltitudeControl : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         CloudControl cloudControl = GameObject.FindAnyObjectByType<CloudControl>();
-        altitudeAnchor = cloudControl.GetCloudAltitudeFor(GetComponent<Element>());
+        altitudeAnchor = cloudControl.GetAltitudeFor(GetComponent<Element>());
         offset = Random.Range(-maxRandomOffset, maxRandomOffset);
     }
 
