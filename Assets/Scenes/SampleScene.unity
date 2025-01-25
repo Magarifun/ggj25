@@ -488,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1dbf05c63a063b4c8e84993f851b092, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cheatCodes: 73000000
+  cheatCodes: 730000006100000064000000
   events:
   - m_PersistentCalls:
       m_Calls:
@@ -496,6 +496,34 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: WorldShaker, Assembly-CSharp
         m_MethodName: Shake
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1260324532}
+        m_TargetAssemblyTypeName: WorldShaker, Assembly-CSharp
+        m_MethodName: Roll
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1260324532}
+        m_TargetAssemblyTypeName: WorldShaker, Assembly-CSharp
+        m_MethodName: Roll
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -565,6 +593,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shakeOffset: 1
+  rollDegrees: 10
   unshakeables:
   - {fileID: 1118938691}
 --- !u!1 &1292215247
