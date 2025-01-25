@@ -44,12 +44,19 @@ public class Element : MonoBehaviour
 
     public void Upgrade()
     {
-        Debug.Log($"Upgrading from level {upgradeIndex}");
         if (upgradeIndex < upgrades.Length - 1)
         {
             upgrades[upgradeIndex].SetActive(false);
             upgradeIndex++;
-            upgrades[upgradeIndex].SetActive(true);
+            GameObject nextUpgrade = upgrades[upgradeIndex];
+            if (nextUpgrade)
+            {
+                upgrades[upgradeIndex].SetActive(true);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }           
         }
     }
 }
