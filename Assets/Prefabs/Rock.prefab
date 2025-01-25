@@ -13,11 +13,12 @@ GameObject:
   - component: {fileID: 8974441201187772567}
   - component: {fileID: 90463566546673283}
   - component: {fileID: 7119527770596573252}
-  - component: {fileID: -767934981597064774}
   - component: {fileID: 2938312917014273790}
+  - component: {fileID: 8167597269980923120}
+  - component: {fileID: -150580197889850197}
   m_Layer: 0
   m_Name: Rock
-  m_TagString: Untagged
+  m_TagString: Element
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,26 +180,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementTags:
   - rock
---- !u!114 &-767934981597064774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5ff4ce0b20e764499e4d1e86649313, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  replaceWith:
-  - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
-  spawn: []
-  targetElementTags:
-  - water
-  range: 1
-  timeThreshold: 2
-  addNoise: 1
 --- !u!114 &2938312917014273790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,6 +197,45 @@ MonoBehaviour:
   spawn: []
   targetElementTags:
   - soil
-  range: 1
-  timeThreshold: 10
+  timeThreshold: 60
   addNoise: 1
+  range: 1
+--- !u!114 &8167597269980923120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3716168090478742639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47708abb2c316b34685cb9da7a1ad644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replaceWith:
+  - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
+  spawn: []
+  targetElementTags:
+  - rock
+  - ore
+  timeThreshold: 3
+  addNoise: 1
+  targetLevel: 3
+  strict: 0
+--- !u!114 &-150580197889850197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3716168090478742639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667c087bcaefb6441abfb89266fb11a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replaceWith:
+  - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
+  spawn: []
+  targetElementTags:
+  - water

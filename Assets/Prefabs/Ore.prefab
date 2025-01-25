@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 8851445384174607983}
   - component: {fileID: 8974441201187772567}
   - component: {fileID: 90463566546673283}
-  - component: {fileID: -8370272875119619041}
+  - component: {fileID: 7119527770596573252}
+  - component: {fileID: -1793297577766587055}
   m_Layer: 0
-  m_Name: Soil
+  m_Name: Ore
   m_TagString: Element
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,8 +31,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.24, y: -0.44, z: -0.052056346}
-  m_LocalScale: {x: 0.4, y: 0.225, z: 0.3}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -80,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.29559743, g: 0.26709118, b: 0.23145834, a: 1}
+  m_Color: {r: 0.27044016, g: 0.27044016, b: 0.27044016, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -148,7 +149,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.089999996
+  m_Mass: 0.09
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -163,7 +164,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-8370272875119619041
+--- !u!114 &7119527770596573252
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -176,4 +177,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementTags:
-  - soil
+  - ore
+--- !u!114 &-1793297577766587055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3716168090478742639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47708abb2c316b34685cb9da7a1ad644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  replaceWith:
+  - {fileID: 7119527770596573252, guid: 3da09355b85c1e349836c6d4657b3d3b, type: 3}
+  spawn: []
+  targetElementTags: []
+  timeThreshold: 3
+  addNoise: 1
+  targetLevel: 1
+  strict: 0

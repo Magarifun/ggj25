@@ -21,11 +21,15 @@ public class Rule : MonoBehaviour
         }
     }
 
-    protected bool IsValidTarget(GameObject target)
-    {
-        if (target.gameObject.CompareTag("Element"))
+    protected bool IsValidTarget(GameObject target, bool noTargetMeansAll = false)
+    {   
+        if (target.CompareTag("Element"))
         {
-            if (target.gameObject.TryGetComponent<Element>(out Element element))
+            if (targetElementTags.Length == 0)
+            {
+                return noTargetMeansAll;
+            }
+            if (target.TryGetComponent<Element>(out Element element))
             {
                 if (element.elementTags.Any(targetElementTags.Contains))
                 {
