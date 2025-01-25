@@ -71,9 +71,6 @@ public class DetectLevel : TimedRule
     private int CountInDirection(Vector2 direction, float distance)
     {
         RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, direction, distance);
-        if (direction == Vector2.up) {
-            Debug.DrawRay(transform.position, direction * distance, Color.red);
-        }
         return hits.Count(hit => !hit.collider.isTrigger && IsValidTarget(hit.collider.gameObject, noTargetMeansAll: true)) - 1;
     }
 }
