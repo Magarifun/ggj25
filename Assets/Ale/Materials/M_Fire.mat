@@ -59,6 +59,7 @@ Material:
     - _CanHaveDistortion: 1
     - _CanUseShockwave: 1
     - _DistortionScale: 1.62
+    - _DistortionSpeed: 1
     - _ShockwaveSize: 0.1
     - _Size: 0.15
     - _SpriteFlashBlendAmount: 0
