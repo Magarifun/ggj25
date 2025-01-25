@@ -7,9 +7,10 @@ public class DetectLevel : TimedRule
     public const int DEEP_THRESHOLD = 5;
 
     private readonly float considerUpwardRange = 5f;
-    private readonly float considerDownwardRange = 2f;
 
     private Level level = Level.Floating;
+
+    private bool isFloater;
 
     public enum Level
     {
@@ -25,16 +26,16 @@ public class DetectLevel : TimedRule
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        isFloater = (GetComponent<Rigidbody2D>().gravityScale <= 0);
         StartPeriodicChecks();
     }
 
     protected override bool CheckIfConditionPersists()
     {
         int countUp = CountInDirection(Vector2.up, considerUpwardRange);
-        int countDown = CountInDirection(Vector2.down, considerDownwardRange);
         if (countUp == 0)
         {
-            level = countDown == 0 ? Level.Floating : Level.Surface;
+            level = isFloater ? Level.Floating : Level.Surface;
         }
         else if (countUp == 1)
         {

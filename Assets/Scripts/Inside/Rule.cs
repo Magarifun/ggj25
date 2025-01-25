@@ -7,15 +7,29 @@ public class Rule : MonoBehaviour
     public const float SPAWN_IMPULSE = 1;
 
     public string[] targetElementTags;
+    public string[] ignoreElementTags;
+
     public bool destroy = false;
     public Element[] spawn;
+    public bool upgrade = false;
 
-    public void ApplyConsequences()
+    protected void ApplyOwnConsequences()
     {
+        Element element = GetComponent<Element>();
         if (destroy)
         {
             Destroy(this.gameObject);
         }
+        else if (upgrade)
+        {
+            element.Upgrade();
+        }
+    }
+
+    public void ApplyConsequences()
+    {
+        ApplyOwnConsequences();
+        
         if (spawn.Length > 0)
         {
             foreach (Element replacement in spawn)
@@ -25,7 +39,7 @@ public class Rule : MonoBehaviour
 
                 // Throws away newly spawned object if it's not a replacement rule
                 if (!destroy)
-                {
+                {   
                     Vector2 randomOffset = (Random.insideUnitCircle * 0.1f);
                     if (randomOffset.y < 0)
                     {
@@ -36,27 +50,44 @@ public class Rule : MonoBehaviour
                     {
                         rb.AddForce(randomOffset * SPAWN_IMPULSE, mode: ForceMode2D.Impulse);
                     }
+                    
                 }
             }
         }
     }
 
     protected bool IsValidTarget(GameObject target, bool noTargetMeansAll = false)
-    {   
+    {
+        bool targettable = false;
         if (target.CompareTag("Element"))
         {
-            if (targetElementTags.Length == 0)
-            {
-                return noTargetMeansAll;
-            }
             if (target.TryGetComponent<Element>(out Element element))
             {
-                if (element.elementTags.Any(targetElementTags.Contains))
+                if (element.UsedInRule)
                 {
-                    return true;
+                    return false;
+                }
+                foreach (string elementTag in element.elementTags)
+                {
+                    if (ignoreElementTags.Contains(elementTag))
+                    {
+                        return false;
+                    }
+                    if (targetElementTags.Length == 0)
+                    {
+                        targettable = noTargetMeansAll;
+                    }
+                    else if (targetElementTags.Contains(elementTag))
+                    {
+                        targettable = true;
+                    }
+                }
+                if (targettable)
+                {
+                    element.MarkAsUsedInRule();
                 }
             }
         }
-        return false;
+        return targettable;
     }
 }
