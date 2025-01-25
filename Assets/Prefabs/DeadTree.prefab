@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3716168090478742639
+--- !u!1 &6360559175242607019
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2021556320800152882}
-  - component: {fileID: 8851445384174607983}
-  - component: {fileID: 8974441201187772567}
-  - component: {fileID: 90463566546673283}
-  - component: {fileID: 7119527770596573252}
-  - component: {fileID: 2938312917014273790}
-  - component: {fileID: 8167597269980923120}
-  - component: {fileID: -150580197889850197}
+  - component: {fileID: 7699524544025066539}
+  - component: {fileID: 1964005372982807561}
+  - component: {fileID: 1900018704558157109}
+  - component: {fileID: 8681821756164338913}
+  - component: {fileID: -8597496264503906845}
+  - component: {fileID: -7340582810694578435}
   m_Layer: 0
-  m_Name: Rock
+  m_Name: DeadTree
   m_TagString: Element
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2021556320800152882
+--- !u!4 &7699524544025066539
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
+  m_GameObject: {fileID: 6360559175242607019}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.24, y: -0.44, z: -0.052056346}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
-  m_ConstrainProportionsScale: 1
+  m_LocalPosition: {x: 0, y: 0, z: -0.052056346}
+  m_LocalScale: {x: 0.1, y: 0.4, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8851445384174607983
+--- !u!212 &1964005372982807561
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
+  m_GameObject: {fileID: 6360559175242607019}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -82,8 +80,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 0.37106913, g: 0.32802406, b: 0.27421772, a: 1}
+  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Color: {r: 0.30817598, g: 0.3014813, b: 0.1579644, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -93,13 +91,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &8974441201187772567
-BoxCollider2D:
+--- !u!60 &1900018704558157109
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
+  m_GameObject: {fileID: 6360559175242607019}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -130,28 +128,47 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.28866667}
     oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!50 &90463566546673283
+  m_Points:
+    m_Paths:
+    - - {x: 0, y: 0.5773587}
+      - {x: -0.5, y: -0.28866667}
+      - {x: 0.5, y: -0.28866667}
+  m_UseDelaunayMesh: 0
+--- !u!114 &8681821756164338913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360559175242607019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04d25f18c9e6c234dbe3a4564f027fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementTags:
+  - deadtree
+  - vegetal
+--- !u!50 &-8597496264503906845
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
+  m_GameObject: {fileID: 6360559175242607019}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.09
+  m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -166,76 +183,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7119527770596573252
+--- !u!114 &-7340582810694578435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04d25f18c9e6c234dbe3a4564f027fbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  elementTags:
-  - rock
---- !u!114 &2938312917014273790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5ff4ce0b20e764499e4d1e86649313, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetElementTags:
-  - soil
-  destroy: 1
-  spawn:
-  - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
-  timeThreshold: 30
-  addNoise: 1
-  range: 1
---- !u!114 &8167597269980923120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
+  m_GameObject: {fileID: 6360559175242607019}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47708abb2c316b34685cb9da7a1ad644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetElementTags:
-  - rock
-  - ore
-  destroy: 1
-  spawn:
-  - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
-  timeThreshold: 3
-  addNoise: 1
-  targetLevel: 3
-  strict: 0
---- !u!114 &-150580197889850197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3716168090478742639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 667c087bcaefb6441abfb89266fb11a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetElementTags:
   - water
   destroy: 1
-  spawn:
-  - {fileID: -8370272875119619041, guid: a435202c962448247b1579b87d346fb3, type: 3}
+  spawn: []
+  timeThreshold: 10
+  addNoise: 1
+  targetLevel: 1
+  strict: 1
