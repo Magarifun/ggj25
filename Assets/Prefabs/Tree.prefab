@@ -160,6 +160,7 @@ MonoBehaviour:
   - tree
   - vegetal
   - life
+  standingUp: 1
 --- !u!114 &8691049861846971694
 MonoBehaviour:
   m_ObjectHideFlags: 0

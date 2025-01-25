@@ -708,7 +708,7 @@ PrefabInstance:
       objectReference: {fileID: 1260324531}
     - target: {fileID: 97979826913257969, guid: 9a673729cf27a8b47bc1822e9e4e6230, type: 3}
       propertyPath: gridSize
-      value: 2
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 97979826913257969, guid: 9a673729cf27a8b47bc1822e9e4e6230, type: 3}
       propertyPath: 'elements.Array.data[0]'
