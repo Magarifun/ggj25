@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3a80a7ea338724642b8ee6e6d2ea77f0
+guid: f81d06b050a1edf41b61dc66fa87d187
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5321949957799140045
-    second: fruit_0
+      213: 1941526607535014259
+    second: alberoBurningFiamma_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fruit_0
+      name: alberoBurningFiamma_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 34
-        height: 41
+        x: 9
+        y: 15
+        width: 102
+        height: 164
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3352af4d5b2a426b0800000000000000
-      internalID: -5321949957799140045
+      spriteID: 3710814b920b1fa10800000000000000
+      internalID: 1941526607535014259
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      fruit_0: -5321949957799140045
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

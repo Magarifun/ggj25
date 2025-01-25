@@ -111,27 +111,25 @@ MonoBehaviour:
   m_AlphaCutoff: 0.1
   m_ApplyToSortingLayers: c75c719f00000000bb541e6d
   m_ShapePath:
-  - {x: 0.34581923, y: -0.576136, z: 0}
-  - {x: 0.107498646, y: -0.6836083, z: 0}
-  - {x: -0.25763535, y: -0.6523111, z: 0}
-  - {x: -0.40890527, y: -0.485393, z: 0}
-  - {x: -0.38282418, y: -0.15155566, z: 0}
-  - {x: -0.27850032, y: 0.13011926, z: 0}
-  - {x: -0.08900118, y: 0.4105144, z: 0}
-  - {x: -0.0035266876, y: 0.617201, z: 0}
-  - {x: 0.18625712, y: 0.303042, z: 0}
-  - {x: 0.40933442, y: -0.29377443, z: 0}
-  m_ShapePathHash: 446446877
+  - {x: 0.19122839, y: -0.08155131, z: 0}
+  - {x: 0.09323239, y: -0.18182945, z: 0}
+  - {x: -0.05006337, y: -0.19433236, z: 0}
+  - {x: -0.16353202, y: -0.10769725, z: 0}
+  - {x: -0.17882204, y: 0.054363966, z: 0}
+  - {x: -0.12488508, y: 0.15135098, z: 0}
+  - {x: 0.040331602, y: 0.18659067, z: 0}
+  - {x: 0.15834737, y: 0.087736845, z: 0}
+  m_ShapePathHash: 729850245
   m_InstanceId: 0
-  m_ShadowShape2DComponent: {fileID: 560074667119431879}
+  m_ShadowShape2DComponent: {fileID: 0}
   m_ShadowShape2DProvider:
-    rid: 2688892549121441800
-  m_ShadowCastingSource: 2
+    rid: -2
+  m_ShadowCastingSource: 1
   m_ShadowMesh:
     m_Mesh: {fileID: 0}
     m_LocalBounds:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.30499268, y: 0.375, z: 0}
+      m_Center: {x: 0.0062031746, y: -0.0038708448, z: 0}
+      m_Extent: {x: 0.18502522, y: 0.19046152, z: 0}
     m_EdgeProcessing: 1
     m_TrimEdge: 0.04
     m_FlipX: 0
@@ -140,14 +138,13 @@ MonoBehaviour:
   m_CastingOption: 1
   m_PreviousTrimEdge: 0.04
   m_PreviousEdgeProcessing: 1
-  m_PreviousShadowCastingSource: 2
+  m_PreviousShadowCastingSource: 1
   m_PreviousShadowShape2DSource: {fileID: 560074667119431879}
   references:
     version: 2
     RefIds:
-    - rid: 2688892549121441800
-      type: {class: ShadowShape2DProvider_SpriteRenderer, ns: UnityEngine.Rendering.Universal, asm: Unity.RenderPipelines.Universal.2D.Runtime}
-      data: 
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!114 &8024768549680909886
 MonoBehaviour:
   m_ObjectHideFlags: 0
