@@ -13,7 +13,7 @@ public class Rule : MonoBehaviour
     public Element[] spawn;
     public bool upgrade = false;
 
-    protected void ApplyOwnConsequences()
+    protected virtual void ApplyOwnConsequences()
     {
         Element element = GetComponent<Element>();
         if (destroy)
@@ -37,9 +37,16 @@ public class Rule : MonoBehaviour
                 var newElement = Instantiate(replacement, transform.position, Quaternion.identity, transform.parent);
                 newElement.name = $"{replacement.name} <- {this.gameObject.name}";
 
-                // Throws away newly spawned object if it's not a replacement rule
-                if (!destroy)
-                {   
+                if (destroy)
+                {
+                    Rigidbody2D ownBody = newElement.GetComponent<Rigidbody2D>();
+                    Rigidbody2D otherBody = newElement.GetComponent<Rigidbody2D>();
+                    otherBody.linearVelocity = ownBody.linearVelocity;
+                    otherBody.angularVelocity = ownBody.angularVelocity;
+                }
+                else
+                {
+                    // Throws newly spawned object if it's not a replacement rule
                     Vector2 randomOffset = (Random.insideUnitCircle * 0.1f);
                     if (randomOffset.y < 0)
                     {
@@ -52,6 +59,7 @@ public class Rule : MonoBehaviour
                     }
                     
                 }
+                
             }
         }
     }
