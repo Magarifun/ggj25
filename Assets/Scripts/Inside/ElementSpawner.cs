@@ -12,6 +12,10 @@ public class ElementSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (parent == null)
+        {
+            parent = GameObject.Find("World").transform;
+        }
         Invoke(nameof(Init), delay);
     }
 

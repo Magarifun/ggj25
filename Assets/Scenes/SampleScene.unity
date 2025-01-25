@@ -1600,21 +1600,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1586546993157653229, guid: 3a1506e0a0803f7499a482c6a4f6d1b4, type: 3}
-      propertyPath: elementTags.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1586546993157653229, guid: 3a1506e0a0803f7499a482c6a4f6d1b4, type: 3}
-      propertyPath: 'elementTags.Array.data[1]'
-      value: hot
-      objectReference: {fileID: 0}
     - target: {fileID: 3013656485548069051, guid: 3a1506e0a0803f7499a482c6a4f6d1b4, type: 3}
       propertyPath: m_Name
       value: Sun
-      objectReference: {fileID: 0}
-    - target: {fileID: 7066965699552837972, guid: 3a1506e0a0803f7499a482c6a4f6d1b4, type: 3}
-      propertyPath: m_GravityScale
-      value: -0.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
