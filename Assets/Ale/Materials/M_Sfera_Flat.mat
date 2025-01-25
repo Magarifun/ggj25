@@ -63,7 +63,7 @@ Material:
     - _InvertTexture: 0
     - _ShockwaveSize: 0.1
     - _Size: 0.28
-    - _SpriteFlashBlendAmount: 0.09
+    - _SpriteFlashBlendAmount: 0.2
     - _UseWind: 0
     - _WaveDistanceFromCenter: 0.23
     - _WaveStrenght: -5
@@ -72,6 +72,6 @@ Material:
     - _WindNoiseScale: 0.89
     m_Colors:
     - _SpawnPosition: {r: 0.5, g: 0.5, b: 0, a: 0}
-    - _SpriteFlashColor: {r: 0.5949226, g: 0.5949226, b: 0.5949226, a: 1}
+    - _SpriteFlashColor: {r: 1.6826952, g: 1.6826952, b: 1.6826952, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

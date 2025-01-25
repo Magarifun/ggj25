@@ -66,7 +66,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.12566371
+  m_Mass: 0.06283186
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -206,6 +206,18 @@ PrefabInstance:
     - target: {fileID: 2567551500869160685, guid: 89b517b769cd8284296132d532fa2dac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065676750726165238, guid: 89b517b769cd8284296132d532fa2dac, type: 3}
+      propertyPath: m_Color.b
+      value: 0.40566027
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065676750726165238, guid: 89b517b769cd8284296132d532fa2dac, type: 3}
+      propertyPath: m_Color.g
+      value: 0.40566027
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065676750726165238, guid: 89b517b769cd8284296132d532fa2dac, type: 3}
+      propertyPath: m_Intensity
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

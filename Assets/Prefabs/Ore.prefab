@@ -59,7 +59,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 8b4fc5d3ac6f72d478597d3417b0755d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -178,6 +178,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementTags:
   - ore
+  standingUp: 0
+  upgrades: []
 --- !u!114 &-1793297577766587055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,9 +193,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetElementTags: []
+  ignoreElementTags: []
   destroy: 1
   spawn:
   - {fileID: 7119527770596573252, guid: 3da09355b85c1e349836c6d4657b3d3b, type: 3}
+  upgrade: 0
   timeThreshold: 3
   addNoise: 1
   targetLevel: 1
