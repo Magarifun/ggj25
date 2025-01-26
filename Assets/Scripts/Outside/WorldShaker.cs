@@ -49,6 +49,7 @@ public class WorldShaker : MonoBehaviour
             child.parent = transform;
         }
         Destroy(temporaryWorld, 1f);
+        SoundManager.Instance.ShakeSfx();
     }
 
     public void Roll(bool clockwise)
@@ -62,5 +63,6 @@ public class WorldShaker : MonoBehaviour
         {
             unshakeable.transform.parent = this.transform;
         }
+        SoundManager.Instance.RollSfx();
     }
 }

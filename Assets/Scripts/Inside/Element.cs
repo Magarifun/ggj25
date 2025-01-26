@@ -19,11 +19,6 @@ public class Element : MonoBehaviour
 
     public string OwnElementTag => elementTags[0];
 
-    internal void Remove()
-    {
-        Destroy(gameObject);
-    }
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,15 +37,18 @@ public class Element : MonoBehaviour
         foreach (string elementTag in elementTags)
         {
             elementCount[elementTag] = elementCount.ContainsKey(elementTag) ? elementCount[elementTag] + 1 : 1;
+            // Debug.Log($"Starting {OwnElementTag}: count of {elementTag} is now {elementCount[elementTag]}");
         }
     }
 
-    private void OnDestroy()
+    public void RemoveFromWorld()
     {
         foreach (string elementTag in elementTags)
         {
-            elementCount[OwnElementTag]--;
+            elementCount[elementTag]--;
+            // Debug.Log($"Removing {OwnElementTag}: count of {elementTag} is now {elementCount[elementTag]}");
         }
+        Destroy(gameObject);
     }
 
     // Update is called once per frame
@@ -79,7 +77,7 @@ public class Element : MonoBehaviour
             }
             else
             {
-                Destroy(gameObject);
+                RemoveFromWorld();
             }           
         }
     }
