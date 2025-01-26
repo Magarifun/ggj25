@@ -54,8 +54,7 @@ MonoBehaviour:
   delayBeforeControlsEnabled: 0
   shakeOffset: 1
   rollDegrees: 10
-  unshakeables:
-  - {fileID: 7903038119565748741}
+  unshakeables: []
 --- !u!114 &2005302651178230820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,10 +264,5 @@ PrefabInstance:
 --- !u!4 &6133857506009805720 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 50833684641997696, guid: 3a1506e0a0803f7499a482c6a4f6d1b4, type: 3}
-  m_PrefabInstance: {fileID: 6173113547940565016}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7903038119565748741 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4037043156199438877, guid: 3a1506e0a0803f7499a482c6a4f6d1b4, type: 3}
   m_PrefabInstance: {fileID: 6173113547940565016}
   m_PrefabAsset: {fileID: 0}
