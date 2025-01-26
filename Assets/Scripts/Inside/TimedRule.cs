@@ -21,6 +21,10 @@ public class TimedRule : PeriodicCheckRule
             timeThreshold += Random.Range(-timeThreshold / 2, timeThreshold / 2);
         }
         checkCount = Mathf.RoundToInt(timeThreshold / checkPeriod);
+        if (checkCount < 1)
+        {
+            checkCount = 1;
+        }
         base.StartPeriodicChecks();
     }
 

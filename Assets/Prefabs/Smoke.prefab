@@ -245,10 +245,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetElementTags: []
   ignoreElementTags:
-  - gas
-  destroy: 0
+  - cloud
+  destroy: 1
   spawn: []
-  upgrade: 1
+  upgrade: 0
   timeThreshold: 0.5
   addNoise: 1
   targetLevel: 3

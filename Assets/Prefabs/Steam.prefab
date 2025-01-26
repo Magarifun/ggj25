@@ -128,7 +128,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.7
+  m_Radius: 0.2
 --- !u!50 &3149233704748849361
 Rigidbody2D:
   serializedVersion: 5
@@ -141,9 +141,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.24630086
-  m_LinearDamping: 0.05
-  m_AngularDamping: 0.05
+  m_Mass: 0.020106195
+  m_LinearDamping: 0.5
+  m_AngularDamping: 0.5
   m_GravityScale: 0.01
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -171,7 +171,8 @@ MonoBehaviour:
   elementTags:
   - steam
   - gas
-  standingUp: 1
+  standingUp: 0
+  standUpBoost: 1
   upgrades: []
 --- !u!114 &6561866613938754245
 MonoBehaviour:
@@ -217,19 +218,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 493573888768406450, guid: 60bf04e199ea6124fbb5b331e116ef17, type: 3}
       propertyPath: m_Color.a
-      value: 1
+      value: 0.25882354
       objectReference: {fileID: 0}
     - target: {fileID: 493573888768406450, guid: 60bf04e199ea6124fbb5b331e116ef17, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.9665554
       objectReference: {fileID: 0}
     - target: {fileID: 493573888768406450, guid: 60bf04e199ea6124fbb5b331e116ef17, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.9811321
       objectReference: {fileID: 0}
     - target: {fileID: 493573888768406450, guid: 60bf04e199ea6124fbb5b331e116ef17, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.82378066
       objectReference: {fileID: 0}
     - target: {fileID: 493573888768406450, guid: 60bf04e199ea6124fbb5b331e116ef17, type: 3}
       propertyPath: m_SortingOrder
