@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butt_fuoco_0: 4158418942759014346
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

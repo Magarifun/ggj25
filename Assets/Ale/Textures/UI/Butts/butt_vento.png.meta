@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butt_vento_0: 6526836068559509607
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
