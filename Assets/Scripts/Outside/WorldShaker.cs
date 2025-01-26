@@ -3,9 +3,25 @@ using UnityEngine;
 
 public class WorldShaker : MonoBehaviour
 {
+    [Header("UI Setup")]
+    public GameObject controls;
+    public float delayBeforeControlsEnabled;
+
+    [Header("Effects setup")]
     public float shakeOffset = 1f;
     public float rollDegrees = 10;
     public GameObject[] unshakeables;
+
+    public void Start()
+    {
+        controls.SetActive(false);
+        Invoke("EnableControls", delayBeforeControlsEnabled);
+    }
+
+    public void EnableControls()
+    {
+        controls.SetActive(true);
+    }
 
     public void Shake()
     {
