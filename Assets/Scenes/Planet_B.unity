@@ -1166,21 +1166,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 192699851782397660, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 192699851782397660, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1253283530}
-    - target: {fileID: 192699851782397660, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReloadCurrentScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 192699851782397660, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneReloader, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 787336679355756909, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1189,14 +1177,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 5111561957901875491, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5744578644580181750, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 665ad51555553904c999a5a757b975df, type: 2}
     - target: {fileID: 6043309311492755228, guid: ae118428deab0bd429aeaf0f850e9282, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -1515,18 +1495,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 739336200212503492, guid: 5e5bbd41fb69e424caef242085375f8e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2261957642542137410, guid: 5e5bbd41fb69e424caef242085375f8e, type: 3}
-      propertyPath: m_SceneBindings.Array.size
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2261957642542137410, guid: 5e5bbd41fb69e424caef242085375f8e, type: 3}
-      propertyPath: m_SceneBindings.Array.data[9].key
-      value: 
-      objectReference: {fileID: 2112787013674688949, guid: 1f865f489f88fa34494f89e9c2ba9784, type: 2}
     - target: {fileID: 2261957642542137410, guid: 5e5bbd41fb69e424caef242085375f8e, type: 3}
       propertyPath: m_SceneBindings.Array.data[3].value
       value: 
@@ -1600,6 +1568,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1260324532}
+    - target: {fileID: 812788396142993191, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8464086066464821575, guid: fbc45633654d81e4d9cc25a3843694fe, type: 3}
+    - target: {fileID: 812788396142993191, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: b817fa5c5083b8a4d84bfc9622aedb28, type: 2}
+    - target: {fileID: 3183276877640181589, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8464086066464821575, guid: fbc45633654d81e4d9cc25a3843694fe, type: 3}
+    - target: {fileID: 3183276877640181589, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: b817fa5c5083b8a4d84bfc9622aedb28, type: 2}
     - target: {fileID: 3682554897232575618, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
       propertyPath: m_Name
       value: Canvas for World Shaking
@@ -1612,10 +1596,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1260324532}
+    - target: {fileID: 5324308502481091310, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5579867211456402215, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1260324532}
+    - target: {fileID: 5749827091511078126, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
+      propertyPath: m_LocalScale.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6094048572629068640, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: b817fa5c5083b8a4d84bfc9622aedb28, type: 2}
     - target: {fileID: 6985906968612849104, guid: 310023fa563762c4ca8231f77c90fd24, type: 3}
       propertyPath: m_Camera
       value: 
