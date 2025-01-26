@@ -8,7 +8,7 @@ public class BubbleDelay : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spawners = GetComponentsInChildren<ElementSpawner>();
+        spawners = GetComponentsInChildren<ElementSpawner>(includeInactive: true);
         foreach (ElementSpawner spawner in spawners)
         {
             spawner.enabled = false;
@@ -22,6 +22,5 @@ public class BubbleDelay : MonoBehaviour
         {
             spawner.enabled = true;
         }
-        Destroy(this);
     }
 }
