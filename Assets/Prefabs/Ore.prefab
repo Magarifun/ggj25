@@ -178,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementTags:
   - ore
+  - earthquakeable
   standingUp: 0
   standUpBoost: 1
   upgrades: []

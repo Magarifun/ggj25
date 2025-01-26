@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   elementTags:
   - rock
+  - earthquakeable
   standingUp: 0
   standUpBoost: 1
   upgrades: []

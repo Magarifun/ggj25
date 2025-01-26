@@ -10,6 +10,8 @@ public class SceneReloader : MonoBehaviour
     // Method to reload the current active scene with a delay
     public void ReloadCurrentSceneWithDelay()
     {
+        Time.timeScale = 1;
+        Element.ResetCounters();
         StartCoroutine(ReloadSceneAfterDelay());
     }
 
