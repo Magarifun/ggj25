@@ -48,7 +48,7 @@ public class Rule : MonoBehaviour
                 {
                     // Throws newly spawned object if it's not a replacement rule
                     Vector2 randomOffset = (Random.insideUnitCircle * 0.1f);
-                    if (randomOffset.y < 0)
+                    if (transform.localPosition.y < 0 && randomOffset.y < 0)
                     {
                         randomOffset.y = -randomOffset.y;
                     }
