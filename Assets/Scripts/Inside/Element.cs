@@ -1,9 +1,12 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Element : MonoBehaviour
 {
     const float STANDUP_COEFFICIENT = 0.005f; // degrees per second per degree deviation
+
+    public static readonly Dictionary<string, int> elementCount = new ();
 
     public string[] elementTags;
     public bool standingUp = false;
@@ -36,6 +39,12 @@ public class Element : MonoBehaviour
             }
             upgrades[upgradeIndex].SetActive(true);
         }
+        elementCount[OwnElementTag] = elementCount.ContainsKey(OwnElementTag) ? elementCount[OwnElementTag] + 1 : 1;
+    }
+
+    private void OnDestroy()
+    {
+        elementCount[OwnElementTag]--;
     }
 
     // Update is called once per frame
