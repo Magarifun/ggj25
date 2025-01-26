@@ -76,6 +76,19 @@ public class SpawnManager : MonoBehaviour
                 }
                 Time.timeScale *= 2;
                 break;
+
+            case "earthquake":
+                FindFirstObjectByType<WorldShaker>().Quake("earthquakeable", 3);
+                break;
+
+            case "tide":
+                FindFirstObjectByType<WorldShaker>().Tide();
+                break;
+
+            case "hurricane":
+                FindFirstObjectByType<WorldShaker>().Quake("gas", 2);
+                break;
+
         }
     }
 

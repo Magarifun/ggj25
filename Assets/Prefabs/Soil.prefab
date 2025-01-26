@@ -179,6 +179,7 @@ MonoBehaviour:
   elementTags:
   - soil
   standingUp: 0
+  standUpBoost: 1
   upgrades: []
 --- !u!114 &5537518687744031781
 MonoBehaviour:

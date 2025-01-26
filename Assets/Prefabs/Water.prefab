@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6178626163271223066}
   - component: {fileID: 3912729641238664075}
   - component: {fileID: 1602116676116468050}
+  - component: {fileID: 7107392282453717271}
   m_Layer: 0
   m_Name: Water
   m_TagString: Element
@@ -173,6 +174,7 @@ MonoBehaviour:
   elementTags:
   - water
   standingUp: 0
+  standUpBoost: 1
   upgrades: []
 --- !u!114 &6178626163271223066
 MonoBehaviour:
@@ -235,6 +237,18 @@ MonoBehaviour:
   - {fileID: 254251000857279531, guid: 77a15138998bd6148b519ec420b2ca84, type: 3}
   upgrade: 0
   combineTwoElements: 0
+--- !u!114 &7107392282453717271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620304729028796628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11881d150e607d2428be7b10c71bdcae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4662103131781444768
 PrefabInstance:
   m_ObjectHideFlags: 0
