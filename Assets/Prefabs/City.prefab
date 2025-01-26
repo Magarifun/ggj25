@@ -149,8 +149,11 @@ MonoBehaviour:
   destroy: 1
   spawn:
   - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
+  - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
+  - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
+  - {fileID: 7119527770596573252, guid: 963160e22510ae24084eb506c3bad686, type: 3}
   upgrade: 0
-  timeThreshold: 40
+  timeThreshold: 5
   addNoise: 1
   targetLevel: 3
   strict: 0

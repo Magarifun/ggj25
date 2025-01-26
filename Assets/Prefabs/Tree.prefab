@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5246284202591300627}
   - component: {fileID: -6973561165716164209}
   - component: {fileID: 6198723343496037704}
+  - component: {fileID: -8698059525439336246}
   m_Layer: 0
   m_Name: Tree
   m_TagString: Element
@@ -165,6 +166,7 @@ MonoBehaviour:
   - vegetal
   - life
   standingUp: 1
+  standUpBoost: 1
   upgrades:
   - {fileID: 749879191366652610}
   - {fileID: 4969179350978011264}
@@ -305,6 +307,26 @@ MonoBehaviour:
   addNoise: 1
   targetLevel: 1
   strict: 1
+--- !u!114 &-8698059525439336246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360559175242607019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f30379b73666d91458212597c1c94c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetElementTags: []
+  ignoreElementTags: []
+  destroy: 0
+  spawn:
+  - {fileID: 254251000857279531, guid: f9d567f6eacdbbf4bac563cde4a669f0, type: 3}
+  upgrade: 0
+  timeThreshold: 20
+  addNoise: 1
 --- !u!1001 &856521997347187551
 PrefabInstance:
   m_ObjectHideFlags: 0
