@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controls: {fileID: 0}
-  delayBeforeControlsEnabled: 5
+  delayBeforeControlsEnabled: 0
   shakeOffset: 1
   rollDegrees: 10
   unshakeables:
@@ -253,6 +253,10 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5875409160451484255, guid: 3a1506e0a0803f7499a482c6a4f6d1b4, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 82c1dc8683474a14f88e9943b45f38e9, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
