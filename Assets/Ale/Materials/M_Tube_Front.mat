@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Background
+  m_Name: M_Tube_Front
   m_Shader: {fileID: -6465566751694194690, guid: eb552acf5d7cf2f4fac5b48fe1d83b01, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -37,7 +37,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTexture:
-        m_Texture: {fileID: 2800000, guid: d1401fa7b9613494c8d38249c4835fac, type: 3}
+        m_Texture: {fileID: 2800000, guid: 96edfea971cb4dc468c99c8bd7349692, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -58,20 +58,20 @@ Material:
     - _CanFlash: 1
     - _CanHaveDistortion: 0
     - _CanUseShockwave: 1
-    - _DistortionScale: 0.2
+    - _DistortionScale: 1.62
     - _DistortionSpeed: 1
     - _InvertTexture: 0
     - _ShockwaveSize: 0.1
-    - _Size: 0.09
-    - _SpriteFlashBlendAmount: 0.34
-    - _UseWind: 0
+    - _Size: 0.15
+    - _SpriteFlashBlendAmount: 0.2
+    - _UseWind: 1
     - _WaveDistanceFromCenter: 0.402
     - _WaveStrenght: -0.16
     - _WindHeightMask: 0
-    - _WindIntensity: 0.29
-    - _WindNoiseScale: 0.89
+    - _WindIntensity: 0.2
+    - _WindNoiseScale: 0.37
     m_Colors:
-    - _SpawnPosition: {r: 0.5, g: 0.08, b: 0, a: 0}
-    - _SpriteFlashColor: {r: 1.498039, g: 1.498039, b: 1.498039, a: 1}
+    - _SpawnPosition: {r: 0.5, g: 0.35, b: 0, a: 0}
+    - _SpriteFlashColor: {r: 2, g: 2, b: 2, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
