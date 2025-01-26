@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4d821c1bbc86f6540ae37f1cf8dc7b3b
+guid: 23b659d6fd2709c4ba23d6bc9c45d328
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4702620289766537362
-    second: Tubo_front_0
+      213: -6918038033855097813
+    second: handContorno-left_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tubo_front_0
+      name: handContorno-left_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 9
-        width: 208
-        height: 548
+        x: 6
+        y: 17
+        width: 186
+        height: 203
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 298341dec30134140800000000000000
-      internalID: 4702620289766537362
+      spriteID: b24dc61cf013eff90800000000000000
+      internalID: -6918038033855097813
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tubo_front_0: 4702620289766537362
+      handContorno-left_0: -6918038033855097813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

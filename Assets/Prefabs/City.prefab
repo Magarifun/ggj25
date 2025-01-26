@@ -127,6 +127,7 @@ MonoBehaviour:
   - city
   - building
   standingUp: 1
+  standUpBoost: 100
   upgrades: []
 --- !u!114 &8167597269980923120
 MonoBehaviour:

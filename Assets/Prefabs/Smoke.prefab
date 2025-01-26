@@ -177,6 +177,7 @@ MonoBehaviour:
   - smoke
   - gas
   standingUp: 1
+  standUpBoost: 1
   upgrades:
   - {fileID: 5114445891070909957}
   - {fileID: 782449472674057201}
@@ -244,10 +245,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetElementTags: []
   ignoreElementTags:
-  - gas
-  destroy: 0
+  - cloud
+  destroy: 1
   spawn: []
-  upgrade: 1
+  upgrade: 0
   timeThreshold: 0.5
   addNoise: 1
   targetLevel: 3
@@ -289,15 +290,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7008816831515564916, guid: cfb343a94c3f0f5449ace4c13512df68, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7008816831515564916, guid: cfb343a94c3f0f5449ace4c13512df68, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7008816831515564916, guid: cfb343a94c3f0f5449ace4c13512df68, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2
+      value: 2.6666665
       objectReference: {fileID: 0}
     - target: {fileID: 7008816831515564916, guid: cfb343a94c3f0f5449ace4c13512df68, type: 3}
       propertyPath: m_LocalPosition.x
@@ -376,15 +377,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7008816831515564916, guid: cfb343a94c3f0f5449ace4c13512df68, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 0.90000004
       objectReference: {fileID: 0}
     - target: {fileID: 7008816831515564916, guid: cfb343a94c3f0f5449ace4c13512df68, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 0.90000004
       objectReference: {fileID: 0}
     - target: {fileID: 7008816831515564916, guid: cfb343a94c3f0f5449ace4c13512df68, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3333333
+      value: 1.4999999
       objectReference: {fileID: 0}
     - target: {fileID: 7008816831515564916, guid: cfb343a94c3f0f5449ace4c13512df68, type: 3}
       propertyPath: m_LocalPosition.x
