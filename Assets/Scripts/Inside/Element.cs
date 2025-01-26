@@ -7,6 +7,7 @@ public class Element : MonoBehaviour
 
     public string[] elementTags;
     public bool standingUp = false;
+    public float standUpBoost = 1f;
     public GameObject[] upgrades;
     private int upgradeIndex = 0;
     private bool usedInRule = false;
@@ -44,7 +45,7 @@ public class Element : MonoBehaviour
         if (standingUp && TryGetComponent<Rigidbody2D>(out Rigidbody2D rb2d))
         {
             float deviationDegrees = Vector3.SignedAngle(Vector3.up, transform.up, Vector3.forward);
-            float torque = -STANDUP_COEFFICIENT * deviationDegrees;
+            float torque = -STANDUP_COEFFICIENT * standUpBoost * deviationDegrees;
             // Apply torch
             rb2d.AddTorque(torque);
         }
