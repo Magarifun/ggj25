@@ -35,4 +35,10 @@ public class SceneReloader : MonoBehaviour
         // Reload the current scene
         SceneManager.LoadScene(currentScene.name);
     }
+
+    public void Quit()
+    {
+        Debug.Log("Quitting");
+        Application.Quit();
+    }
 }
