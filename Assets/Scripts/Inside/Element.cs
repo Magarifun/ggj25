@@ -39,12 +39,18 @@ public class Element : MonoBehaviour
             }
             upgrades[upgradeIndex].SetActive(true);
         }
-        elementCount[OwnElementTag] = elementCount.ContainsKey(OwnElementTag) ? elementCount[OwnElementTag] + 1 : 1;
+        foreach (string elementTag in elementTags)
+        {
+            elementCount[elementTag] = elementCount.ContainsKey(elementTag) ? elementCount[elementTag] + 1 : 1;
+        }
     }
 
     private void OnDestroy()
     {
-        elementCount[OwnElementTag]--;
+        foreach (string elementTag in elementTags)
+        {
+            elementCount[OwnElementTag]--;
+        }
     }
 
     // Update is called once per frame
