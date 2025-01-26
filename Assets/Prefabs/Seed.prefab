@@ -112,6 +112,7 @@ MonoBehaviour:
   - vegetal
   - life
   standingUp: 0
+  standUpBoost: 1
   upgrades: []
 --- !u!70 &8534656565425624791
 CapsuleCollider2D:
@@ -253,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetElementTags:
   - people
+  - animal
   ignoreElementTags: []
   destroy: 1
   spawn: []
