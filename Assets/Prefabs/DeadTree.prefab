@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -7340582810694578435}
   - component: {fileID: 3223954686173719508}
   - component: {fileID: 3214313502372663342}
+  - component: {fileID: -5558416811979274688}
   m_Layer: 0
   m_Name: DeadTree
   m_TagString: Element
@@ -225,6 +226,28 @@ MonoBehaviour:
   - {fileID: 8681821756164338913, guid: a5b348d345087e54694c30668f01da13, type: 3}
   upgrade: 0
   combineTwoElements: 0
+--- !u!114 &-5558416811979274688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360559175242607019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5ff4ce0b20e764499e4d1e86649313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetElementTags:
+  - human
+  ignoreElementTags: []
+  destroy: 1
+  spawn:
+  - {fileID: 7119527770596573252, guid: 2d3c38a680d0fc74c94a5bf10d8a17a1, type: 3}
+  upgrade: 0
+  timeThreshold: 5
+  addNoise: 1
+  range: 2
 --- !u!1001 &4511067178144003210
 PrefabInstance:
   m_ObjectHideFlags: 0

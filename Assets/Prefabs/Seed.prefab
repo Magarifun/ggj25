@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6227807373468732358}
   - component: {fileID: -3415248969810743487}
   - component: {fileID: 320970169245452797}
+  - component: {fileID: -5028112819231262496}
   m_Layer: 0
   m_Name: Seed
   m_TagString: Element
@@ -238,6 +239,25 @@ MonoBehaviour:
   upgrade: 0
   timeThreshold: 6
   addNoise: 1
+--- !u!114 &-5028112819231262496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6043964007613236551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 667c087bcaefb6441abfb89266fb11a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetElementTags:
+  - people
+  ignoreElementTags: []
+  destroy: 1
+  spawn: []
+  upgrade: 0
+  combineTwoElements: 0
 --- !u!1001 &4375417218200939490
 PrefabInstance:
   m_ObjectHideFlags: 0

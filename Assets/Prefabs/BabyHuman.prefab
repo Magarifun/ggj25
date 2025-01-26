@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2888651056563756767}
   - component: {fileID: 3025747496488132296}
   - component: {fileID: 2430779575348227425}
+  - component: {fileID: 6837572029253917313}
   m_Layer: 0
   m_Name: BabyHuman
   m_TagString: Element
@@ -220,6 +221,28 @@ MonoBehaviour:
   - {fileID: 7119527770596573252, guid: cdaf8947e876e254cbd806a0b3f4a6df, type: 3}
   upgrade: 0
   combineTwoElements: 0
+--- !u!114 &6837572029253917313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3620304729028796628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5ff4ce0b20e764499e4d1e86649313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetElementTags:
+  - smoke
+  ignoreElementTags: []
+  destroy: 1
+  spawn:
+  - {fileID: 7119527770596573252, guid: cdaf8947e876e254cbd806a0b3f4a6df, type: 3}
+  upgrade: 0
+  timeThreshold: 1
+  addNoise: 0
+  range: 0.5
 --- !u!1001 &1192088507873047618
 PrefabInstance:
   m_ObjectHideFlags: 0
