@@ -64,7 +64,7 @@ Material:
     - _ShockwaveSize: 0.1
     - _Size: 0.09
     - _SpriteFlashBlendAmount: 0.441
-    - _UseWind: 1
+    - _UseWind: 0
     - _WaveDistanceFromCenter: 0.402
     - _WaveStrenght: -0.16
     - _WindHeightMask: 0
