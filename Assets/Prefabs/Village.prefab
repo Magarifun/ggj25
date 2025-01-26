@@ -82,6 +82,7 @@ MonoBehaviour:
   - village
   - building
   standingUp: 1
+  standUpBoost: 50
   upgrades: []
 --- !u!114 &2938312917014273790
 MonoBehaviour:
