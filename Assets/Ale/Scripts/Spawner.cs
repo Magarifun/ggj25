@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
             return;
         }
 
-        if (index < 0 || index >= objectsToSpawn.Length)
+        if (index < -1 || index >= objectsToSpawn.Length)
         {
             Debug.LogError($"Invalid index {index}. Index must be between 0 and {objectsToSpawn.Length - 1}.");
             return;
@@ -43,6 +43,12 @@ public class Spawner : MonoBehaviour
                 Random.Range(spawnAreaMin.x, spawnAreaMax.x),
                 Random.Range(spawnAreaMin.y, spawnAreaMax.y)
             );
+
+            if (index == -1)
+            {
+                index = Random.Range(0, objectsToSpawn.Length);
+            }
+            GameObject objectToSpawn = objectsToSpawn[index];
 
             var spawned = Instantiate(objectsToSpawn[index], spawnPosition, Quaternion.identity, world);
             spawned.name = objectsToSpawn[index].name + " <-- Player";
