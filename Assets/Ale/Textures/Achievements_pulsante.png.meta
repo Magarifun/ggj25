@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Achievements_pulsante_0: 4518854241792414597
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

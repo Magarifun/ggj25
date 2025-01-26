@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ach_greenhouse_off_0: -6396184391083183369
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
