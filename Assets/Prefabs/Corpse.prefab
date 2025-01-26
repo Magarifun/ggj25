@@ -198,7 +198,7 @@ MonoBehaviour:
   destroy: 1
   spawn: []
   upgrade: 0
-  timeThreshold: 5
+  timeThreshold: 20
   addNoise: 1
 --- !u!1001 &1366214944810045609
 PrefabInstance:
