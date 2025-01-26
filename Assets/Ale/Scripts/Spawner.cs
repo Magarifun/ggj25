@@ -11,6 +11,16 @@ public class Spawner : MonoBehaviour
 
     public Color gizmoColor = new Color(0, 1, 0, 0.3f); // Light green color with transparency
 
+    private Transform world;
+
+    private void RegisterWorld()
+    {
+        if (world == null)
+        {
+            world = GameObject.Find("World").transform;
+        }
+    }
+
     public void SpawnObject(int index, int count)
     {
         if (objectsToSpawn == null || objectsToSpawn.Length == 0)
@@ -25,14 +35,17 @@ public class Spawner : MonoBehaviour
             return;
         }
 
+        RegisterWorld();
+
         for (int i = 0; i < count; i++)
         {
-            Vector2 spawnPosition = new Vector2(
+            Vector2 spawnPosition = new (
                 Random.Range(spawnAreaMin.x, spawnAreaMax.x),
                 Random.Range(spawnAreaMin.y, spawnAreaMax.y)
             );
 
-            Instantiate(objectsToSpawn[index], spawnPosition, Quaternion.identity);
+            var spawned = Instantiate(objectsToSpawn[index], spawnPosition, Quaternion.identity, world);
+            spawned.name = objectsToSpawn[index].name + " <-- Player";
         }
     }
 
