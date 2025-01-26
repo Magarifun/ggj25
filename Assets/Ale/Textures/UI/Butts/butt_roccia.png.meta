@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butt_roccia_0: -7306547938882019989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

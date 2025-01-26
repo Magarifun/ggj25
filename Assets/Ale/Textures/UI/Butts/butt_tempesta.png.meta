@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butt_tempesta_0: -3977651846180490674
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

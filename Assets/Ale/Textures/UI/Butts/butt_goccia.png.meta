@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butt_goccia_0: -1223719405095607860
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

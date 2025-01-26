@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butt_animali_0: -5839548119559103730
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

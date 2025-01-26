@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butt_frutti_0: -8900198806884630054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

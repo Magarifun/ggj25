@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      butt_umano_0: 6929272459441219351
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
