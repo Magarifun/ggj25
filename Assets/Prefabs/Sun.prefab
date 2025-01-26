@@ -149,7 +149,7 @@ MonoBehaviour:
   spawn:
   - {fileID: 1586546993157653229, guid: 74ddfb7eb4afcdc42ae553e26babe7f6, type: 3}
   upgrade: 0
-  timeThreshold: 1
+  timeThreshold: 5
   addNoise: 0
 --- !u!1001 &1450802399957369684
 PrefabInstance:
