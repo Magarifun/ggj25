@@ -18,7 +18,7 @@ public class Rule : MonoBehaviour
         Element element = GetComponent<Element>();
         if (destroy)
         {
-            Destroy(this.gameObject);
+            GetComponent<Element>().RemoveFromWorld();
         }
         else if (upgrade)
         {
