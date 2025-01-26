@@ -541,7 +541,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
-      value: human
+      value: people
       objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementCount
