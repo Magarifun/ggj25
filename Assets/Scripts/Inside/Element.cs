@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEditor.PackageManager.Requests;
 using UnityEngine;
 
 public class Element : MonoBehaviour
@@ -85,5 +86,10 @@ public class Element : MonoBehaviour
     public void MarkAsUsedInRule()
     {
         usedInRule = true;
+    }
+
+    public static void ResetCounters()
+    {
+        elementCount.Clear();
     }
 }

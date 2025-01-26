@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class WorldShaker : MonoBehaviour
@@ -25,9 +27,9 @@ public class WorldShaker : MonoBehaviour
 
     public void Shake()
     {
-        GameObject temporaryWorld = new ("Temporary World");
+        GameObject temporaryWorld = new("Temporary World");
         temporaryWorld.transform.position = transform.position;
-        List<Transform> children = new ();
+        List<Transform> children = new();
         foreach (Transform child in transform)
         {
             if (child.position.y < transform.position.y)
@@ -64,5 +66,31 @@ public class WorldShaker : MonoBehaviour
             unshakeable.transform.parent = this.transform;
         }
         SoundManager.Instance.RollSfx();
+    }
+
+    public void Quake(string quakeableTag, int factor)
+    {
+        int count = 0;
+        foreach (Element element in GetComponentsInChildren<Element>())
+        {
+            if (element.elementTags.Contains(quakeableTag))
+            {
+                element.gameObject.transform.localScale *= factor;
+                count++;
+                if (count >= 20)
+                {
+                    return;
+                }
+            }
+
+        }
+    }
+
+    public void Tide()
+    {
+        foreach (Tide element in GetComponentsInChildren<Tide>())
+        {
+            element.StartTide();
+        }
     }
 }

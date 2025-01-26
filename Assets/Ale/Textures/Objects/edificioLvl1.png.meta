@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 776e48c5382bae847a46e1bb96425c49
+guid: 9935d2534288b7f49ab61f28fcbc4451
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1090787666999930883
-    second: Achievements_pulsante_close_0
+      213: 5304279600078770153
+    second: edificioLvl1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Achievements_pulsante_close_0
+      name: edificioLvl1_0
       rect:
         serializedVersion: 2
         x: 7
-        y: 10
-        width: 104
-        height: 104
+        y: 9
+        width: 88
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 30078e89a91432f00800000000000000
-      internalID: 1090787666999930883
+      spriteID: 9efcb0861369c9940800000000000000
+      internalID: 5304279600078770153
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Achievements_pulsante_close_0: 1090787666999930883
+      edificioLvl1_0: 5304279600078770153
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
