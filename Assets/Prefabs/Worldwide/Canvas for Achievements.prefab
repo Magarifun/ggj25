@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4469837940992659316}
   - component: {fileID: 3528654173234244832}
   - component: {fileID: 2074657751865840441}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 6320442630983931736}
   - component: {fileID: 6724146197814464700}
   - component: {fileID: 2313222828466964004}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Canvas for Achievements
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,12 +155,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 7255451066696311729}
   - component: {fileID: 7908986479798109161}
   - component: {fileID: 6753663251186925788}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Toggle Button Close
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -375,18 +375,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 156724199904292646}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &5416037184549030774
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,7 +387,7 @@ GameObject:
   - component: {fileID: 1574188359586286478}
   - component: {fileID: 4824533897505724634}
   - component: {fileID: 9169163590609920934}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Summary Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -506,7 +494,7 @@ GameObject:
   - component: {fileID: 8362191100527970069}
   - component: {fileID: 662771191552806224}
   - component: {fileID: 612980292187906041}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Notification Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8779400615339398887}
   - component: {fileID: 2592882057241929230}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,7 +655,7 @@ GameObject:
   - component: {fileID: 206629342310276809}
   - component: {fileID: 2672992418694401411}
   - component: {fileID: 2448220915126002899}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Toggle Button Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -811,18 +799,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 156724199904292646}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1001 &880505020074159055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -834,6 +810,10 @@ PrefabInstance:
     - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_Name
       value: Achievement Tile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
@@ -878,6 +858,10 @@ PrefabInstance:
     - target: {fileID: 2504752388927276989, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4282578037232682017, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_Pivot.x
@@ -989,6 +973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Achievement Tile (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
       value: fire
@@ -1032,6 +1020,10 @@ PrefabInstance:
     - target: {fileID: 2504752388927276989, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4282578037232682017, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_Pivot.x
@@ -1155,6 +1147,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Achievement Tile (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
       value: deadtree
@@ -1198,6 +1194,10 @@ PrefabInstance:
     - target: {fileID: 2504752388927276989, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4282578037232682017, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_Pivot.x
@@ -1309,6 +1309,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Achievement Tile (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
       value: smoke
@@ -1352,6 +1356,10 @@ PrefabInstance:
     - target: {fileID: 2504752388927276989, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4282578037232682017, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_Pivot.x
@@ -1463,6 +1471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Achievement Tile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
       value: tree
@@ -1506,6 +1518,10 @@ PrefabInstance:
     - target: {fileID: 2504752388927276989, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4282578037232682017, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_Pivot.x
@@ -1617,6 +1633,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Achievement Tile (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
       value: animal
@@ -1660,6 +1680,10 @@ PrefabInstance:
     - target: {fileID: 2504752388927276989, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4282578037232682017, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_Pivot.x
@@ -1783,6 +1807,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Achievement Tile
       objectReference: {fileID: 0}
+    - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
       value: cloud
@@ -1826,6 +1854,10 @@ PrefabInstance:
     - target: {fileID: 2504752388927276989, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_IsActive
@@ -1944,9 +1976,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Achievement Tile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 725257406782032474, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementTag
-      value: tower
+      value: city
       objectReference: {fileID: 0}
     - target: {fileID: 1462042286551783920, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: elementCount
@@ -1987,6 +2023,10 @@ PrefabInstance:
     - target: {fileID: 2504752388927276989, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3980435919947431735, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4282578037232682017, guid: 7357eceaa078b3646b3e512b883688f2, type: 3}
       propertyPath: m_Pivot.x
